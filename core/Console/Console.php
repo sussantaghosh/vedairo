@@ -8,7 +8,12 @@ final class Console {
         $cmd = $argv[1] ?? 'help';
         switch ($cmd) {
             case 'about':
-                echo "VEDAIRO Enterprise 5.0.0\nPHP " . PHP_VERSION . "\n";
+                echo "VEDAIRO Enterprise 5.0.0\n";
+                echo "PHP " . PHP_VERSION . "\n";
+                echo "VEDAIRO™ Ecosystem License\n";
+                echo "Copyright (c) 2026 Cloud Soft Web LLP\n\n";
+                echo "Developed at: Cloud Soft Web Lab (WB, India)\n";
+                echo "Author & Principal Architect: Susanta Ghosh (CEO, Cloud Soft Web LLP)\n";
                 break;
 
             case 'route:list':
