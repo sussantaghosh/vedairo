@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VEDAIRO Enterprise 5.0.0 — Official Developer Manual & Architecture Guide</title>
+  <link rel="icon" type="image/png" href="/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -422,7 +423,10 @@
   <!-- Top Action Navigation Bar -->
   <div class="top-bar">
     <div class="top-bar-left">
-      <a href="/" class="badge-logo">VEDAIRO™ Enterprise</a>
+      <a href="/" class="badge-logo" style="display: inline-flex; align-items: center; gap: 8px;">
+        <img src="/logo.png" alt="VEDAIRO Logo" style="height: 22px; width: auto; border-radius: 4px;">
+        <span>VEDAIRO™ Enterprise</span>
+      </a>
       <span class="doc-pill">v5.0.0 Manual</span>
     </div>
     <div class="top-bar-actions">

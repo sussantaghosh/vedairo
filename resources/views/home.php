@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VEDAIRO Enterprise 5.0.0 — Modern High-Velocity PHP Framework</title>
+  <link rel="icon" type="image/png" href="/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -73,18 +74,23 @@
       gap: 12px;
       text-decoration: none;
     }
+    .brand-logo-img {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      display: block;
+    }
     .brand-logo {
-      width: 38px;
-      height: 38px;
-      background: linear-gradient(135deg, #6366f1, #06b6d4);
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
       border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 800;
-      color: #fff;
-      font-size: 1.2rem;
-      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+      overflow: hidden;
     }
     .brand-name {
       font-size: 1.25rem;
@@ -527,7 +533,7 @@
   <nav class="navbar">
     <div class="nav-container">
       <a href="/" class="brand">
-        <div class="brand-logo">V</div>
+        <img src="/logo.png" alt="VEDAIRO Logo" class="brand-logo-img">
         <div>
           <span class="brand-name">VEDAIRO</span>
           <span class="badge-version">v5.0.0</span>

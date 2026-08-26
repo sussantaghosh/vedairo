@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VEDAIRO Enterprise — Executive Authentication</title>
+  <link rel="icon" type="image/png" href="/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -61,19 +62,25 @@
       text-align: center;
       margin-bottom: 28px;
     }
-    .brand-icon {
-      width: 48px;
-      height: 48px;
-      background: linear-gradient(135deg, #6366f1, #06b6d4);
+    .login-logo-img {
+      height: 64px;
+      width: auto;
+      object-fit: contain;
       border-radius: 12px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+    .brand-icon {
+      width: 54px;
+      height: 54px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
-      font-weight: 800;
-      font-size: 1.5rem;
-      box-shadow: 0 8px 24px rgba(99, 102, 241, 0.4);
       margin-bottom: 12px;
+      overflow: hidden;
     }
     .brand-title {
       font-size: 1.6rem;
@@ -199,7 +206,7 @@
 
   <div class="login-container">
     <div class="brand-header">
-      <div class="brand-icon">V</div>
+      <img src="/logo.png" alt="VEDAIRO Logo" class="login-logo-img">
       <h1 class="brand-title">VEDAIRO Enterprise</h1>
       <p class="brand-subtitle">Executive Access Portal & Security Gateway</p>
     </div>

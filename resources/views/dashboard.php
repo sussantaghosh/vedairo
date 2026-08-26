@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VEDAIRO Enterprise — Executive Control Center</title>
+  <link rel="icon" type="image/png" href="/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -61,18 +62,23 @@
       gap: 12px;
       text-decoration: none;
     }
+    .brand-logo-img {
+      height: 38px;
+      width: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      display: block;
+    }
     .brand-icon {
-      width: 36px;
-      height: 36px;
-      background: linear-gradient(135deg, #6366f1, #06b6d4);
+      width: 38px;
+      height: 38px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
       border-radius: 9px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
-      font-weight: 800;
-      font-size: 1.1rem;
-      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+      overflow: hidden;
     }
     .brand-name {
       font-size: 1.2rem;
@@ -394,7 +400,7 @@
   <header class="header">
     <div class="header-container">
       <a href="/dashboard" class="brand">
-        <div class="brand-icon">V</div>
+        <img src="/logo.png" alt="VEDAIRO Logo" class="brand-logo-img">
         <div>
           <span class="brand-name">VEDAIRO</span>
           <span class="brand-pill">Enterprise v5.0.0</span>
