@@ -32,7 +32,7 @@ Follow these steps to set up VEDAIRO locally:
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/your-username/vedairo.git
+git clone https://github.com/sussantaghosh/vedairo.git
 cd vedairo
 ```
 
