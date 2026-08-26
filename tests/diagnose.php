@@ -14,7 +14,7 @@ $lintErrors = [];
 foreach ($iterator as $file) {
     if ($file->isFile() && $file->getExtension() === 'php') {
         $path = $file->getRealPath();
-        if (str_contains($path, DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR)) {
+        if (str_contains($path, DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR) || str_contains($path, DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR)) {
             continue;
         }
         $phpFiles[] = $path;

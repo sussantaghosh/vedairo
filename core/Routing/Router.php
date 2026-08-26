@@ -19,6 +19,7 @@ class Router
     public function post($p, $a, $mw = []): self { return $this->add('POST', $p, $a, $mw); }
     public function put($p, $a, $mw = []): self { return $this->add('PUT', $p, $a, $mw); }
     public function delete($p, $a, $mw = []): self { return $this->add('DELETE', $p, $a, $mw); }
+    public function getRoutes(): array { return $this->routes; }
 
     public function middleware(array $m, callable $cb): void
     {

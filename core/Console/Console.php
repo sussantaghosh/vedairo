@@ -57,7 +57,14 @@ final class Console {
 
             case 'serve':
                 $port = (int) ($argv[2] ?? '8000');
-                passthru(PHP_BINARY . ' -S 127.0.0.1:' . $port . ' -t public public/index.php');
+                echo "====================================================\n";
+                echo " VEDAIRO Enterprise 5.0.0 Development Server\n";
+                echo "====================================================\n";
+                echo " Local URL:    http://127.0.0.1:{$port}\n";
+                echo " Alternate:    http://localhost:{$port}\n";
+                echo " Document Root: " . base_path('public') . "\n";
+                echo " Press Ctrl+C in this terminal to stop the server.\n\n";
+                passthru(escapeshellcmd(PHP_BINARY) . ' -S 127.0.0.1:' . $port . ' -t public public/index.php');
                 break;
 
             default:
