@@ -251,7 +251,7 @@
               <td style="text-align: center; font-family: var(--font-mono);"><?= e($i['qty']) ?></td>
               <td style="text-align: right;" class="price-col">$<?= number_format((float)$i['line_total'], 2) ?></td>
               <td style="text-align: right;">
-                <button class="btn btn-danger" onclick="removeFromCart(<?= e($i['product_id']) ?>)" style="padding: 4px 8px; font-size: 0.75rem;">✕</button>
+                <button class="btn btn-danger" onclick="removeFromCart(<?= e($i['product']['id'] ?? $i['product_id'] ?? 0) ?>)" style="padding: 4px 8px; font-size: 0.75rem;">✕</button>
               </td>
             </tr>
             <?php endforeach; ?>

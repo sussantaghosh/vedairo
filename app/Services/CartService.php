@@ -31,7 +31,7 @@ public function items(): array {
         if (!$p) continue;
         $line = (float)$p['price'] * $qty;
         $subtotal += $line;
-        $out[] = ['product' => $p, 'qty' => $qty, 'line_total' => $line];
+        $out[] = ['product' => $p, 'product_id' => (int)$id, 'qty' => $qty, 'line_total' => $line];
     }
 
     return ['items' => $out, 'subtotal' => $subtotal, 'count' => array_sum($c)];
