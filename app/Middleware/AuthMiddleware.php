@@ -1,0 +1,1 @@
+<?php namespace App\Middleware; class AuthMiddleware {public function handle(\Vedairo\Http\Request $r): void { if(!\Vedairo\Auth\Auth::check()) { if($r->wantsJson()) \Vedairo\Http\Response::json(['success'=>false,'message'=>'Unauthenticated'],401); \redirect('/login'); } }}

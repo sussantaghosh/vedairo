@@ -1,0 +1,1 @@
+<?php namespace Vedairo; class View {public static function render(string $view,array $data=[]):string{$file=base_path('resources/views/'.$view.'.php');if(!is_file($file))throw new \RuntimeException("View [$view] not found");extract($data);ob_start();include $file;return (string) ob_get_clean();}}

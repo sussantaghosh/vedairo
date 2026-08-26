@@ -1,0 +1,3 @@
+<?php
+namespace Vedairo\Security;
+class Encryption { public function __construct(private string $key){} private function k():string{return hash('sha256',$this->key,true);} public function encrypt(string $plain):string{$iv=random_bytes(12);$tag='';$c=openssl_encrypt($plain,'aes-256-gcm',$this->k(),OPENSSL_RAW_DATA,$iv,$tag);return base64_encode($iv.$tag.$c);} public function decrypt(string $value):string{$b=base64_decode($value,true);if($b===false||strlen($b)<28)throw new \RuntimeException('Invalid ciphertext');$iv=substr($b,0,12);$tag=substr($b,12,16);$c=substr($b,28);$p=openssl_decrypt($c,'aes-256-gcm',$this->k(),OPENSSL_RAW_DATA,$iv,$tag);if($p===false)throw new \RuntimeException('Unable to decrypt');return $p;} }

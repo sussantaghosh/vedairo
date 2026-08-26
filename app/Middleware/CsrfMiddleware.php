@@ -1,0 +1,1 @@
+<?php namespace App\Middleware; class CsrfMiddleware {public function handle(\Vedairo\Http\Request $r): void { if (in_array($r->method, ['POST','PUT','PATCH','DELETE'], true) && !\Vedairo\Security\Csrf::check($r->input('_token') ?? ($_SERVER['HTTP_X_CSRF_TOKEN'] ?? null))) { \Vedairo\Http\Response::json(['success' => false, 'message' => 'CSRF validation failed'], 419); } }}

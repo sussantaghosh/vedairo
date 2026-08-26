@@ -1,0 +1,3 @@
+<?php
+namespace Database\Seeders;
+class DatabaseSeeder {public static function run():void{$db=\Vedairo\Application::$container->get('db');$exists=$db->table('users')->whereEq('email','admin@vedairo.local')->first();if(!$exists)$db->table('users')->insert(['name'=>'VEDAIRO Admin','email'=>'admin@vedairo.local','password'=>password_hash('Admin@12345',PASSWORD_DEFAULT),'role'=>'admin','created_at'=>date('Y-m-d H:i:s'),'updated_at'=>date('Y-m-d H:i:s')]);$count=$db->table('products')->count();if($count===0){foreach([['Demo Laptop',49999,10],['Demo Phone',19999,25],['Demo Keyboard',1499,50]] as $p)$db->table('products')->insert(['name'=>$p[0],'price'=>$p[1],'stock'=>$p[2],'status'=>1,'created_at'=>date('Y-m-d H:i:s'),'updated_at'=>date('Y-m-d H:i:s')]);}}}

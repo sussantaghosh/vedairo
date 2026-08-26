@@ -1,0 +1,1 @@
+<?php namespace Vedairo\Events; class Event {private static array $listeners=[];public static function listen(string $event,callable $listener):void{self::$listeners[$event][]=$listener;}public static function dispatch(object $event):void{foreach(self::$listeners[$event::class]??[] as $l)$l($event);}}

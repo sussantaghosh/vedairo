@@ -1,0 +1,34 @@
+# Environment & Secrets
+.env
+.env.backup
+.env.production
+.env.local
+
+# Storage artifacts (keep directory structure via .gitkeep)
+/storage/cache/*
+!/storage/cache/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/sessions/*
+!/storage/sessions/.gitkeep
+/storage/uploads/*
+!/storage/uploads/.gitkeep
+/storage/queue.json
+/storage/vedairo/
+
+
+# Composer vendor & phar
+/vendor/
+composer.phar
+
+
+# Test & IDE artifacts
+.phpunit.result.cache
+.phpstan.cache
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+

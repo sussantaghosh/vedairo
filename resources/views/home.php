@@ -1,0 +1,1 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VEDAIRO</title><style>body{font-family:Arial;max-width:900px;margin:60px auto;padding:20px}a,button{padding:8px 12px}</style></head><body><h1>VEDAIRO Framework</h1><p>Production-oriented PHP framework foundation.</p><a href="/login">Login</a></body></html>
