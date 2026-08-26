@@ -1,6 +1,12 @@
 <?php
 declare(strict_types=1);
-require_once __DIR__.'/Support/helpers.php';
+
+if (is_file(dirname(__DIR__) . '/vendor/autoload.php')) {
+    require_once dirname(__DIR__) . '/vendor/autoload.php';
+}
+
+require_once __DIR__ . '/Support/helpers.php';
+
 require_once __DIR__.'/AI/functions.php';
 spl_autoload_register(function(string $class){
     $map=['Vedairo\\'=>__DIR__.'/','App\\'=>dirname(__DIR__).'/app/'];
