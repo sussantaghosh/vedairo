@@ -29,7 +29,7 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/vedairo.git
+git clone https://github.com/sussantaghosh/vedairo.git
 cd vedairo
 
 # 2. Install dependencies
