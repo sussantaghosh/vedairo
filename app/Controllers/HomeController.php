@@ -32,6 +32,22 @@ class HomeController {
     }
 
     public function dashboard(): string {
-        return '<h1>VEDAIRO Dashboard</h1><p>Authenticated successfully.</p><p><a href="/users">Users CRUD</a></p><form method="post" action="/logout"><input type="hidden" name="_token" value="'.e(csrf_token()).'"><button>Logout</button></form>';
+        $user = \Vedairo\Auth\Auth::user() ?? ['name' => 'Administrator', 'email' => 'admin@vedairo.local', 'role' => 'admin'];
+        $stats = [
+            'users' => 0,
+            'products' => 0,
+            'orders' => 0,
+        ];
+        try {
+            $db = \Vedairo\Application::$container->get('db');
+            $stats['users'] = (int) $db->query("SELECT COUNT(*) FROM users")->fetchColumn();
+            $stats['products'] = (int) $db->query("SELECT COUNT(*) FROM products")->fetchColumn();
+            $stats['orders'] = (int) $db->query("SELECT COUNT(*) FROM orders")->fetchColumn();
+        } catch (\Throwable) {}
+
+        return View::render('dashboard', [
+            'user' => $user,
+            'stats' => $stats,
+        ]);
     }
 }
