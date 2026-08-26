@@ -537,7 +537,7 @@
       <ul class="nav-links">
         <li><a href="#features">Features</a></li>
         <li><a href="/docs">Developer Manual</a></li>
-        <li><a href="/docs/manual">PDF Guide</a></li>
+        <li><a href="/pdf" target="_blank">PDF User Guide</a></li>
         <li><a href="#support">Help & Support</a></li>
         <li><a href="#health">API Status</a></li>
       </ul>
@@ -547,9 +547,9 @@
           <span class="status-dot"></span>
           PHP <?=PHP_VERSION?> (Port 8000)
         </div>
-        <a href="/docs/manual" class="btn btn-outline" title="Open and Download PDF Manual">
+        <a href="/pdf" target="_blank" class="btn btn-outline" title="Open VEDAIRO-Enterprise-Complete-User-Guide-v5.0.0.pdf">
           <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          PDF Manual
+          PDF Guide
         </a>
         <a href="/login" class="btn btn-primary">Sign In</a>
       </div>
@@ -572,9 +572,9 @@
       </p>
 
       <div class="hero-actions">
-        <a href="/docs/guide.pdf" download="VEDAIRO-Enterprise-Complete-User-Guide-v5.0.0.pdf" class="btn btn-cyan" style="font-size: 1rem; padding: 12px 24px;">
+        <a href="/pdf" download="VEDAIRO-Enterprise-Complete-User-Guide-v5.0.0.pdf" class="btn btn-cyan" style="font-size: 1rem; padding: 12px 24px;">
           <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-          Download PDF Guide (.pdf)
+          Download User Guide PDF (v5.0.0)
         </a>
         <a href="/docs/manual" class="btn btn-outline" style="font-size: 1rem; padding: 12px 24px;">
           <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
@@ -630,7 +630,7 @@
           Access the full developer manual covering system architecture, database schema, route specifications, multi-provider AI setups, background queues, and production security audits.
         </p>
         <div class="showcase-actions">
-          <a href="/docs/guide.pdf" download="VEDAIRO-Enterprise-Complete-User-Guide-v5.0.0.pdf" class="btn btn-cyan">
+          <a href="/pdf" download="VEDAIRO-Enterprise-Complete-User-Guide-v5.0.0.pdf" class="btn btn-cyan">
             <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
             Download PDF Guide (.pdf)
           </a>
@@ -737,8 +737,8 @@
           <h4>📄 PDF Developer Manual</h4>
           <p>Official full technical specification, developer guide, and complete API handbook.</p>
           <div style="display: flex; flex-direction: column; gap: 8px;">
-            <a href="/docs/guide.pdf" download="VEDAIRO-Enterprise-Complete-User-Guide-v5.0.0.pdf" class="btn btn-cyan" style="justify-content: center; padding: 8px;">
-              📥 Download PDF (.pdf)
+            <a href="/pdf" download="VEDAIRO-Enterprise-Complete-User-Guide-v5.0.0.pdf" class="btn btn-cyan" style="justify-content: center; padding: 8px;">
+              📥 Download PDF Guide
             </a>
             <a href="/docs/manual" class="btn btn-outline" style="justify-content: center; padding: 8px;">
               📖 Open Web Manual

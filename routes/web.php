@@ -3,6 +3,8 @@ $r=\Vedairo\Application::$container->get('router');
 $r->get('/','App\Controllers\\HomeController@index');
 $r->get('/docs','App\Controllers\\HomeController@docs');
 $r->get('/docs/manual','App\Controllers\\HomeController@manual');
+$r->get('/docs/pdf','App\Controllers\\HomeController@pdf');
+$r->get('/pdf','App\Controllers\\HomeController@pdf');
 $r->get('/login','App\Controllers\\AuthController@showLogin',['guest']);
 $r->post('/login','App\Controllers\\AuthController@login',['guest','csrf']);
 $r->post('/logout','App\Controllers\\AuthController@logout',['auth','csrf']);
